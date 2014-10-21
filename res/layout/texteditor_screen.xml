@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="100" >
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="15"
+        android:scrollbarAlwaysDrawHorizontalTrack="true" >
+
+        <RelativeLayout
+            android:id="@+id/editor_header_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="#7f8c8d" >
+
+            <com.migzing.customizations.FontAwesomeToggleButton
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/togglebutton_texteditor"
+                android:textColor="@color/togglebutton_texteditor_text"
+                android:textOff="@string/fontawesomeicon_bold"
+                android:textOn="@string/fontawesomeicon_bold"
+                android:textSize="25sp" />
+
+            <com.migzing.customizations.FontAwesomeToggleButton
+                android:id="@+id/button3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/button1"
+                android:background="@drawable/togglebutton_texteditor"
+                android:textColor="@color/togglebutton_texteditor_text"
+                android:textOff="@string/fontawesomeicon_italic"
+                android:textOn="@string/fontawesomeicon_italic"
+                android:textSize="25sp" />
+
+            <com.migzing.customizations.FontAwesomeButton
+                android:id="@+id/button5"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/button3"
+                android:background="@drawable/button_texteditor"
+                android:textColor="@color/togglebutton_texteditor_text"
+                android:text="@string/fontawesomeicon_hyperlink"
+                android:textSize="25sp" />
+
+            <com.migzing.customizations.FontAwesomeToggleButton
+                android:id="@+id/button6"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/button5"
+                android:background="@drawable/togglebutton_texteditor"
+                android:textColor="@color/togglebutton_texteditor_text"
+                android:textOff="@string/fontawesomeicon_bulletlist"
+                android:textOn="@string/fontawesomeicon_bulletlist"
+                android:textSize="25sp" />
+
+            <com.migzing.customizations.FontAwesomeButton
+                android:id="@+id/button4"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/button6"
+                android:background="@drawable/button_texteditor"
+                android:text="@string/fontawesomeicon_insertimage"
+                android:textSize="25sp" />
+
+            <com.migzing.customizations.FontAwesomeButton
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/button4"
+                android:background="@drawable/button_texteditor"
+                android:text="@string/fontawesomeicon_blockquote"
+                android:textSize="25sp" />
+        </RelativeLayout>
+    </HorizontalScrollView>
+
+    <com.migzing.texteditor.PostEdit
+        android:id="@+id/post_body_texteditor"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="85"
+        android:gravity="start"
+        android:inputType="textMultiLine" />
+
+</LinearLayout>

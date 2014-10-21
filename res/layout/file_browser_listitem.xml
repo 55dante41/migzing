@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:customizations="http://schemas.android.com/apk/lib/com.migzing.main"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:orientation="horizontal"
+    android:padding="5dp"
+    android:weightSum="100" >
+
+    <com.migzing.customizations.FontAwesomeTextView
+        android:id="@+id/filebrowser_listitem_icon"
+        android:layout_width="0px"
+        android:layout_height="match_parent"
+        android:layout_weight="10"
+        android:textSize="20sp" />
+
+    <RelativeLayout
+        android:id="@+id/filebrowser_listitem_details"
+        android:layout_width="0px"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="80" >
+
+        <TextView
+            android:id="@+id/filebrowser_listitem_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true" />
+
+        
+
+    </RelativeLayout>
+    
+    <CheckBox
+            android:id="@+id/filebrowser_listitem_checkbox"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="10"
+            android:focusable="false"
+            android:text="" />
+
+</LinearLayout>
