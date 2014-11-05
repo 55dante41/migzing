@@ -7,7 +7,7 @@
     android:padding="5dp"
     android:weightSum="100" >
 
-    <com.migzing.customizations.FontAwesomeTextView
+    <com.limelite.migzing.customizations.FontAwesomeTextView
         android:id="@+id/filebrowser_listitem_icon"
         android:layout_width="0px"
         android:layout_height="match_parent"

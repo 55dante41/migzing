@@ -17,7 +17,7 @@
             android:layout_height="match_parent"
             android:background="#7f8c8d" >
 
-            <com.migzing.customizations.FontAwesomeToggleButton
+            <com.limelite.migzing.customizations.FontAwesomeToggleButton
                 android:id="@+id/button1"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -27,7 +27,7 @@
                 android:textOn="@string/fontawesomeicon_bold"
                 android:textSize="25sp" />
 
-            <com.migzing.customizations.FontAwesomeToggleButton
+            <com.limelite.migzing.customizations.FontAwesomeToggleButton
                 android:id="@+id/button3"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -38,7 +38,7 @@
                 android:textOn="@string/fontawesomeicon_italic"
                 android:textSize="25sp" />
 
-            <com.migzing.customizations.FontAwesomeButton
+            <com.limelite.migzing.customizations.FontAwesomeButton
                 android:id="@+id/button5"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -48,7 +48,7 @@
                 android:text="@string/fontawesomeicon_hyperlink"
                 android:textSize="25sp" />
 
-            <com.migzing.customizations.FontAwesomeToggleButton
+            <com.limelite.migzing.customizations.FontAwesomeToggleButton
                 android:id="@+id/button6"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -59,7 +59,7 @@
                 android:textOn="@string/fontawesomeicon_bulletlist"
                 android:textSize="25sp" />
 
-            <com.migzing.customizations.FontAwesomeButton
+            <com.limelite.migzing.customizations.FontAwesomeButton
                 android:id="@+id/button4"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -68,7 +68,7 @@
                 android:text="@string/fontawesomeicon_insertimage"
                 android:textSize="25sp" />
 
-            <com.migzing.customizations.FontAwesomeButton
+            <com.limelite.migzing.customizations.FontAwesomeButton
                 android:id="@+id/button2"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -79,7 +79,7 @@
         </RelativeLayout>
     </HorizontalScrollView>
 
-    <com.migzing.texteditor.PostEdit
+    <com.limelite.migzing.texteditor.PostEdit
         android:id="@+id/post_body_texteditor"
         android:layout_width="match_parent"
         android:layout_height="0dp"
